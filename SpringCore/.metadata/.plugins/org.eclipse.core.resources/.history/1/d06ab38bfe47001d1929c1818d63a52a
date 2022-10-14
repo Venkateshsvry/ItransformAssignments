@@ -1,0 +1,18 @@
+package com.codebind;
+
+import java.util.List;
+
+public class BankAccountRepositoryImpl implements BankAccountRepository {
+	
+private List<BankAccount> list;
+	public Double getBalance(long AccountId) {
+		
+		return null;
+	}
+
+	public Double updateBalance(long AccountId, double newBalance) {
+		
+		return null;
+	}
+
+}

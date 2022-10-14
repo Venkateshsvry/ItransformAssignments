@@ -1,0 +1,34 @@
+package com.codebind;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BankAccountRepositoryImpl implements BankAccountRepository {
+	
+public BankAccount getBank() {
+		return bank;
+	}
+
+	public void setBank(BankAccount bank) {
+		this.bank = bank;
+	}
+@Autowired
+private BankAccount bank;
+	public Double getBalance(long AccountId) {
+		if(bank.getAccountId()==AccountId) {
+		return bank.getBalance();}
+		return null;
+		
+	}
+
+	public Double updateBalance(long AccountId, double newBalance) {
+		double update=0.0;
+		if(bank.getAccountId()==AccountId) {
+			update=bank.getBalance()+newBalance;
+			bank.setBalance(update);
+		}
+		return update;
+	}
+
+}

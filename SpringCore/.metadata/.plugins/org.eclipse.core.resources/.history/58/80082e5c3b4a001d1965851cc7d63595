@@ -1,0 +1,10 @@
+package com.codebind;
+
+import org.springframework.stereotype.Controller;
+
+
+public interface BankAccountRepository {
+	public Double getBalance(long AccountId);
+	public Double updateBalance(long AccountId,double newBalance);
+
+}

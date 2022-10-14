@@ -1,0 +1,10 @@
+package com.codebind;
+
+public class Snapdragon implements MobileProcessor {
+
+	public void process() {
+		System.out.println("it has good processor unit");
+
+	}
+
+}

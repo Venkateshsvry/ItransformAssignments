@@ -1,0 +1,10 @@
+package com.codebind;
+
+import javax.swing.plaf.synth.SynthStyleFactory;
+
+public class Samsung {
+	public void config() {
+		System.out.println("sumsung mobile");
+	}
+
+}

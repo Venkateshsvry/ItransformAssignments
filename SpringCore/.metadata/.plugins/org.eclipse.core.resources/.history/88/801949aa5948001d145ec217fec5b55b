@@ -1,0 +1,10 @@
+package com.codebind;
+
+
+
+public class Samsung {
+	public void config() {
+		System.out.println("sumsung mobile");
+	}
+
+}
