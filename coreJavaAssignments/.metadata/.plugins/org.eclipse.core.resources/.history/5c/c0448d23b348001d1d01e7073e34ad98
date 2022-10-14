@@ -1,0 +1,13 @@
+package practice;
+
+public class FuninterImpl implements FunInter  {
+
+	public static void main(String[] args) {
+		
+	
+
+	}
+
+	
+
+}

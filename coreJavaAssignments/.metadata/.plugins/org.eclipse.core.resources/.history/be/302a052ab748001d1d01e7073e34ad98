@@ -1,0 +1,10 @@
+package Java11Assignments;
+
+public class VarDeclaration {
+
+	public static void main(String[] args) {
+		String path="C:\\Users\\vk51\\Documents\\var.txt"
+
+	}
+
+}

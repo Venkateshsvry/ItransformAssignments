@@ -1,0 +1,6 @@
+package practice;
+
+public interface FunInter {
+	int add(int a,int b);
+
+}

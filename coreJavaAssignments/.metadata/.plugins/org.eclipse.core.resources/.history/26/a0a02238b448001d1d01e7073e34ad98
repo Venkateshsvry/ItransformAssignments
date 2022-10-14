@@ -1,0 +1,24 @@
+package practice;
+
+public class FuninterImpl   {
+
+	public static void main(String[] args) {
+//		FunInter  f=new FuninterImpl();
+//		System.out.println(f.add(3, 2));
+		
+		FunInter f=(a,b)->{
+			return a+b;
+		};
+	
+
+	}
+
+//	@Override
+//	public int add(int a, int b) {
+//		
+//		return a+b;
+//	}
+//
+//	
+
+}

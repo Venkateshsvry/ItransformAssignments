@@ -1,0 +1,12 @@
+package Java11Assignments;
+
+public class SimpleInterest {
+
+	public static void main(String[] args) {
+		SimpleInterestInterface si=(a,b,c)->{
+			return (double) (a*b*c)/100;
+		};
+si.SI(10000.0, 10, 2)
+	}
+
+}

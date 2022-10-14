@@ -1,0 +1,20 @@
+package Assignment1;
+
+import java.util.Scanner;
+
+public class CalculateSimpleCompound {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("principal in terms of rupees");
+		int principal=;
+		int interest=2;
+		int time=2;
+		float simpleinterest=(principal*interest*time)/100;
+		System.out.println(simpleinterest);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Assignment1;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int i=153;
+		int n=0,x=0;
+		while (n>0)
+		x=x*x*x+(i)%10;
+
+	}
+
+}

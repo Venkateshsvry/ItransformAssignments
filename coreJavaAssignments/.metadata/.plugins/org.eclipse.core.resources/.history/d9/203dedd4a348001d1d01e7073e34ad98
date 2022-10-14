@@ -1,0 +1,21 @@
+package practice;
+
+import java.awt.datatransfer.SystemFlavorMap;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		var path="C:\\Users\\vk51\\Desktop\springboot.txt";
+		try {
+			String s=Files.readString(Path.of(path));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

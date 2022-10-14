@@ -1,0 +1,15 @@
+package Assignment1;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int i=153;
+		int n=0,x=0;
+		while (n>0) {
+		x=i%10;
+		i=i/10;
+		System.out.println(x);
+		}
+	}
+
+}

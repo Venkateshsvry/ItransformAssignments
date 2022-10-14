@@ -1,0 +1,14 @@
+package practice;
+
+public class FuninterImpl  {
+
+	public static void main(String[] args) {
+		
+		FunInter f=(a,b)->a+b;
+		System.out.println(f);
+
+	}
+
+	
+
+}

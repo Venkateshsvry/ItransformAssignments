@@ -1,0 +1,21 @@
+package practice;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FileReadMethods {
+
+	public static void main(String[] args) {
+		String path="C:\\Users\\vk51\\Documents\\StudentList.txt";
+		try {
+			int count=Files.readString(Path.of(path)).length();
+			System.out.println(count);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

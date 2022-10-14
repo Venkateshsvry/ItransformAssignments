@@ -1,0 +1,30 @@
+package practice;
+
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.StandardOpenOption;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		var path="C:\\Users\\vk51\\Desktop\\springboot.txt";
+		var path1="C:\\Users\\vk51\\Documents\\demo.txt";
+		
+		try {
+			//Files.writeString(Path.of(path),"spring is use for developing backend applications",StandardOpenOption.APPEND);
+			//boolean b=Files.isWritable(Path.of(path));
+		Files.copy(Path.of(path), Path.of(path1), StandardCopyOption.COPY_ATTRIBUTES);
+			String s=Files.readString(Path.of(path1));
+			System.out.println(s);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+
+}

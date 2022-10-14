@@ -1,0 +1,25 @@
+package practice;
+
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		var path="C:\\Users\\vk51\\Desktop\\springboot.txt";
+		
+		try {
+			Files.writeString(Path.of(path),"spring is use for developing backend applications",StandardOpenOption.APPEND)
+			String s=Files.readString(Path.of(path));
+			System.out.println(s);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

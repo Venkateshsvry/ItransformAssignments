@@ -1,0 +1,20 @@
+package practice;
+
+public class FuninterImpl implements FunInter  {
+
+	public static void main(String[] args) {
+		FunInter  f=new FuninterImpl();
+		f.add(3, 2);
+	
+
+	}
+
+	@Override
+	public int add(int a, int b) {
+		
+		return a+b;
+	}
+
+	
+
+}

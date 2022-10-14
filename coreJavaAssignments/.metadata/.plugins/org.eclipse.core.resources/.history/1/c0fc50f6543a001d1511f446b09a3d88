@@ -1,0 +1,19 @@
+package Assignment1;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int i=153;
+		int temp=i;
+		int x=0,n=0;
+		while (i>0) {
+		x=i%10;
+		i=i/10;
+		n=x*x*x+n;
+				}
+		if(n==temp) {
+		System.out.println("it is armstrong number");
+		}
+	}
+
+}

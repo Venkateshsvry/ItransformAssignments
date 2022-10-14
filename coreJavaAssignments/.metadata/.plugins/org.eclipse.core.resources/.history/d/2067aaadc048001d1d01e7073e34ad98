@@ -1,0 +1,26 @@
+package practice;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Iterator;
+import java.util.List;
+
+public class FileReadMethods {
+
+	public static void main(String[] args) {
+		String path="C:\\Users\\vk51\\Documents\\StudentList.txt";
+		try {
+			List<String> s=Files.readAllLines(Path.of(path));
+			String[] arr=s.toArray(size->new String[size]);
+			
+			
+			System.out.println(s.size());
+			System.out.println(s);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+
+}

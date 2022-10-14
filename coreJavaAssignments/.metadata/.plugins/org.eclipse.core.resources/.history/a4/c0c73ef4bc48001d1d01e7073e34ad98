@@ -1,0 +1,14 @@
+package Java11Assignments;
+
+import java.net.URI;
+import java.net.http.HttpClient.Version;
+import java.net.http.HttpRequest;
+
+public class HttpClientAp1 {
+
+	public static void main(String[] args) {
+		String Path="https://httpbin.org/get";
+		HttpRequest req= (HttpRequest) HttpRequest.newBuilder().uri(URI.create(Path)).GET().version(Version.HTTP_2).build();
+	}
+
+}

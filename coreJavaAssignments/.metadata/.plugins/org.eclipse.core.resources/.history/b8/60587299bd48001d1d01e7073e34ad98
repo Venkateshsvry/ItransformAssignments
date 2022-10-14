@@ -1,0 +1,21 @@
+package Java11Assignments;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpClient.Version;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse.BodyHandler;
+import java.net.http.HttpResponse.BodyHandlers;
+
+public class HttpClientAp1 {
+
+	public static void main(String[] args) {
+		String Path="https://httpbin.org/get";
+		HttpRequest req= (HttpRequest) HttpRequest.newBuilder()
+				.uri(URI.create(Path)).GET().version(Version.HTTP_2).build();
+		
+		HttpClient client= HttpClient.newBuilder().build();
+		client.send(req,BodyHandlers.ofString())
+	}
+
+}

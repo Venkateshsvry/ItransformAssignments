@@ -1,0 +1,16 @@
+package Assignment1;
+
+public class CalculateSimpleCompound {
+
+	public static void main(String[] args) {
+		int principal=10000;
+		int interest=2/100;
+		int time=2;
+		float simpleinterest=(principal*interest*time)/100;
+		System.out.println(simpleinterest);
+		
+		
+
+	}
+
+}
