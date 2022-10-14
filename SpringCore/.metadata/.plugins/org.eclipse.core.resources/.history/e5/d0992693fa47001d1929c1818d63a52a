@@ -1,0 +1,16 @@
+package com.codebind;
+
+public class BankAccount {
+	private Long AccountId;
+	private String AccHolderName;
+	private String AccountType;
+	private Double balance;
+	public BankAccount(Long accountId, String accHolderName, String accountType, Double balance) {
+		super();
+		AccountId = accountId;
+		AccHolderName = accHolderName;
+		AccountType = accountType;
+		this.balance = balance;
+	}
+
+}

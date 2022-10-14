@@ -1,0 +1,42 @@
+package com.codebind;
+
+public class Customer {
+
+public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	public Long getContact() {
+		return contact;
+	}
+
+	public void setContact(Long contact) {
+		this.contact = contact;
+	}
+
+@Override
+public String toString() {
+	return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", contact=" + contact + "]";
+}
+
+public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+private int customerId;
+private String customerName;
+private Long contact;
+
+
+
+
+	
+}

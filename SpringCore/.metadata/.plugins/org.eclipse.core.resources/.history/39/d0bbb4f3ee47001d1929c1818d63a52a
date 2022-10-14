@@ -1,0 +1,43 @@
+package com.codebind;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component
+public class Customer {
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	public Long getContact() {
+		return contact;
+	}
+
+	public void setContact(Long contact) {
+		this.contact = contact;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer ";
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	private int customerId;
+	private String customerName;
+	private Long contact;
+	@Autowired
+	private Address address;
+	
+}

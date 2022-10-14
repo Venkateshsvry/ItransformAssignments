@@ -1,0 +1,9 @@
+package com.codebind;
+
+public class Customer {
+private int customerId;
+private String customerName;
+private Double contact;
+private Address address;
+	
+}
