@@ -1,9 +1,0 @@
-package com.codebind;
-
-public class BankAccount {
-	private Long AccountId;
-	private String AccHolderName;
-	private String AccountType;
-	private Double balance;
-
-}
