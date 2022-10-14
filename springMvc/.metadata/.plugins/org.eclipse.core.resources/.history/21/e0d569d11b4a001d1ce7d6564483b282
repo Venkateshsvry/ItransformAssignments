@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelversion>4.0.0</modelversion>
+  <groupid>tutorialspointexamples</groupid>
+  <artifactid>SpringMVCHelloWorld</artifactid>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringMVCHelloWorld Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+      <dependency>
+        <groupid>junit</groupid>
+        <artifactid>junit</artifactid>
+        <version>3.8.1</version>
+        <scope>test</scope>
+      </dependency>
+ 
+      <!-- Spring dependencies -->
+      <dependency>
+		<groupid>org.springframework</groupid>
+		<artifactid>spring-core</artifactid>
+		<version>${spring.version}</version>
+	</dependency>
+ 
+	<dependency>
+		<groupid>org.springframework</groupid>
+		<artifactid>spring-web</artifactid>
+		<version>${spring.version}</version>
+	</dependency>
+ 
+	<dependency>
+		<groupid>org.springframework</groupid>
+		<artifactid>spring-webmvc</artifactid>
+		<version>${spring.version}</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalname>SpringMVCHelloWorld</finalname>
+  </build>
+</project>
